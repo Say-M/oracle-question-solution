@@ -121,6 +121,8 @@ db.customers.find().pretty()
 db.customers.find({$and : [{status: {$ne: "active"}}, {status: {$ne: "neutral"}}]})
 ```
 
+or
+
 ```
 db.customers.find({status: {$nin: ["active", "neutral"]}})
 ```
